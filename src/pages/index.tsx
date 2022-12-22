@@ -18,7 +18,7 @@ const MainPage = () => {
 
   return (
    <div>
-    <Flex margin={100} align={'center'} justify={'center'} gap={5}>
+    <Flex margin={70} align={'center'} justify={'center'} gap={5}>
       <Button onClick={writeClick} colorScheme={'purple'}>
           Write Blog
       </Button>

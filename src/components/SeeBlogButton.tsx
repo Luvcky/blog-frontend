@@ -9,13 +9,16 @@ const SeeBlogButton = ({ blogData }: { blogData: BlogPost }) => {
     }
   if (blogData) {
     return (
-      <Box shadow={'xl'} onClick={showBlog} borderRadius={10}>
+      <Box boxShadow={'-2px 1px 70px 10px rgba(210,0,255,0.5)'} onClick={showBlog} borderRadius={10}>
         <Flex direction={"column"} justify={"center"} align={"center"} padding={30} gap={2} >
         <h1>
         {blogData.title}
         </h1>
         <h1>
         {blogData.authorName}
+        </h1>
+        <h1>
+        {blogData.timeToRead}
         </h1>
         {
             isShowBlog == true && <h1>

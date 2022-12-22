@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 import React from 'react'
 import { blogs } from '../assets/blogs'
 import SeeBlogButton from './SeeBlogButton'
@@ -14,6 +14,9 @@ const SeeB = () => {
     }
   return (
     <div>
+        <Heading textAlign={'center'}>
+            Avaliable Blogs
+        </Heading>
         <Flex direction={'row'} wrap={'wrap'} p="10" gap={3}>
             {generateBlogs()}
         </Flex>

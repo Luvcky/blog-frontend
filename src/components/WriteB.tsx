@@ -27,14 +27,16 @@ const WriteB = () => {
         {NewInput('Author Name', 'authorName', blogData.authorName)}
         {NewInput('Blog', 'blog', blogData.blog, true)}
         {NewInput('Time to Read', 'timeToRead', blogData.timeToRead)}
-        <Button onClick={onPost}>
-            Post
-        </Button>
+        <Flex align={'center'} justify={'center'}>
+            <Button onClick={onPost} colorScheme={'green'}>
+                Post
+            </Button>
+        </Flex>
 
     </div>
   )
     function NewInput(heading:string ,  name: string, value: any, isTextArea?:boolean) {
-        return <Flex margin={10} padding={2} gap={2}>
+        return <Flex margin={10} padding={2} gap={2} shadow={'xl'} borderRadius={5}>
             <Text fontSize={'l'}>
                 {heading + ":"}
             </Text>
