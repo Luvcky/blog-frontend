@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Input, Text, Textarea } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Input, Text, Textarea } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import  {addBlog, BlogPost, blogs}  from '../assets/blogs'
 
@@ -19,7 +19,7 @@ const WriteB = () => {
        addBlog(blogData)
     }
   return (
-    <div>
+    <Box px ="100px">
         <Heading textAlign={'center'}>
             Write Blog
         </Heading>
@@ -33,15 +33,15 @@ const WriteB = () => {
             </Button>
         </Flex>
 
-    </div>
+    </Box>
   )
     function NewInput(heading:string ,  name: string, value: any, isTextArea?:boolean) {
-        return <Flex margin={10} padding={2} gap={2} shadow={'xl'} borderRadius={5}>
+        return <Flex margin={10} padding={2} gap={5} justify={'space-between'} shadow={'xl'} borderRadius={5} align={'center'} fontSize={'2xl'}>
             <Text fontSize={'l'}>
                 {heading + ":"}
             </Text>
             {
-                isTextArea ? <Textarea name={name} value={value} onChange={onChangeInput}></Textarea> :  <Input type={'text'} name={name} value={value} onChange={onChangeInput} />
+                isTextArea ? <Textarea name={name} value={value} onChange={onChangeInput} maxW={'1300px'}></Textarea> :  <Input type={'text'} name={name} value={value} onChange={onChangeInput} maxW={'1300px'} />
             }
            
         </Flex>

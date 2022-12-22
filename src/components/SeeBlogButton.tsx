@@ -1,4 +1,4 @@
-import { Box, Flex, Link, LinkBox } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { BlogPost } from "../assets/blogs";
 
@@ -9,21 +9,21 @@ const SeeBlogButton = ({ blogData }: { blogData: BlogPost }) => {
     }
   if (blogData) {
     return (
-      <Box boxShadow={'-2px 1px 70px 10px rgba(210,0,255,0.5)'} onClick={showBlog} borderRadius={10}>
-        <Flex direction={"column"} justify={"center"} align={"center"} padding={30} gap={2} >
-        <h1>
+      <Box boxShadow={'-2px 1px 70px 10px rgba(210,0,255,0.5)'} onClick={showBlog} borderRadius={10} overflow={'scroll'}>
+        <Flex direction={"column"} justify={"center"} align={"center"} padding={50} gap={3} >
+        <Text fontSize={'20px'} fontWeight={'bold'} >
         {blogData.title}
-        </h1>
+        </Text>
         <h1>
         {blogData.authorName}
         </h1>
         <h1>
-        {blogData.timeToRead}
+        {blogData.timeToRead + " minute Read"}
         </h1>
         {
-            isShowBlog == true && <h1>
+            isShowBlog == true && <Text whiteSpace={'pre-line'}>
                 {blogData.blog}
-            </h1>
+            </Text>
         }
         </Flex>
       </Box>

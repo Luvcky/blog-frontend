@@ -17,7 +17,7 @@ const SeeB = () => {
         <Heading textAlign={'center'}>
             Avaliable Blogs
         </Heading>
-        <Flex direction={'row'} wrap={'wrap'} p="10" gap={3}>
+        <Flex direction={'row'} wrap={'wrap'} p="20" gap={'100px'} justify={'center'}>
             {generateBlogs()}
         </Flex>
     </div>
