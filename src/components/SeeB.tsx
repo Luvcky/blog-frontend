@@ -8,7 +8,7 @@ const SeeB = () => {
     function generateBlogs() {
         let blogShow = []
         for (let i = 0; i < blogs.length; i++){
-            blogShow.push(<SeeBlogButton  blogData={blogs[i]}/>)
+            blogShow.push(<SeeBlogButton key={i} blogData={blogs[i]}/>)
         }
         return blogShow
     }

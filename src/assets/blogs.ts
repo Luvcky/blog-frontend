@@ -2,7 +2,6 @@ export type BlogPost = {
   title: string;
   authorName: string;
   blog: string;
-  timeToRead: number;
   postDate: Date;
 };
 
@@ -86,17 +85,16 @@ export let blogs: BlogPost[] = [
     Available on iPhone and iPad with A12 Bionic and later. Requires download of speech models.
     App Privacy Report will arrive as part of a software update to iOS 15, iPadOS 15, and watchOS 8.
     iCloud+ plans: 50GB with one HomeKit Secure Video camera ($0.99 per month), 200GB with up to five HomeKit Secure Video cameras ($2.99 per month), and 2TB with an unlimited number of HomeKit Secure Video cameras ($9.99 per month).`,
-    timeToRead: 10,
     postDate: new Date(),
   },
   {
     title: "1234",
     authorName: "abc",
     blog: "22222222222222222222222222222",
-    timeToRead: 2,
     postDate: new Date(),
   },
 ];
+
 export function addBlog(newblog: BlogPost) {
   blogs.push(newblog);
 }

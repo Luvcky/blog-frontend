@@ -11,7 +11,18 @@ const styles: ChakraTheme["styles"] = {
         "html, body": {
             background: "black",
             color: "white"
-        }
+        },
+        "h1" : {
+            fontSize: "40px"
+        },
+        "h2": {
+            fontSize: "30px"
+        },
+        "code": {
+            bg: '#123',
+            p: 1,
+            borderRadius: 'md'
+        } 
     })
 }
 
