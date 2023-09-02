@@ -1,6 +1,13 @@
 # blog-frontend
-Description:
-Features:
+
+# Description:
+This is a website in which people can write blogs and/or see other people's blogs 
+
+# Features:
+1. Write blogs
+2. Read blogs
+3. Blogs can be collaborative so multiple authors can work on the same blog
+4. Format the blogs
 
 
 # How to use:
